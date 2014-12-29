@@ -1,5 +1,7 @@
-Rover4wd drive with L298N motor controller
-============================================
+PI Rover
+========
+Dagu Rover 5 drive software for Raspberry PI
+------------------------------------------
 
 This assumes one motor controller board for both left motors and both right motors using two different outputs.
 
