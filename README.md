@@ -1,13 +1,22 @@
-PI Rover
+PI Rover - motor class for Dagu Rover 5
 ========
-Dagu Rover 5 drive software for Raspberry PI
-------------------------------------------
+This repository provides a simple motor class and ultrasonic sensor class in python. They can be used together to build an autonomous robot.
 
-This assumes one motor controller board for both left motors and both right motors using two different outputs.
+The code in the motor class assumes one L298N board is used for both left motors and both right motors using two different outputs.
 
-I have used a LiPo battery into the L298N - then I took the 5v output line to power the PI.
+#### Connection:
+
+* 2S LiPo -> L298N
+* 5v (PI) <- L298N
+* Common ground
 
 
-Alex Ellis
-alex ellis 2 AT g mail dot com
+#### The code:
+
+* motor.py - reusable motor class
+* ultrasonic.py - takes measurements of distance
+* drive.py - simple movement
+* keyboard_drive - keyboard input for timed movements
+* drive_then_halt - drive until ultrasonic sensor detects something within boundaries.
+
 
